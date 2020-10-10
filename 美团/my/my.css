@@ -1,0 +1,101 @@
+.header {
+    width: 100%;
+    height: 5.5rem;
+    background-image: url('./img/header.png');
+    background-size: cover;
+    overflow: hidden;
+}
+
+.avatar {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto;
+    display: block;
+    border: 0.04rem solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    margin-top: 0.0267rem;
+}
+
+.nickname {
+    color: #333;
+    font-size: 0.4rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-left: 0.0667rem;
+}
+
+.content {
+    min-height: 12rem;
+    background-color: #eee;
+}
+
+.items {
+    border-bottom: 0.2667rem solid #eee;
+    background-color: #fff;
+}
+
+.items li {
+    height: 1.3333rem;
+    font-size: 0.4rem;
+    position: relative;
+    padding-left: 0.9rem;
+    margin-left: 0.0067rem;
+    border-bottom: 0.0133rem solid #eee;
+    line-height: 1.3333rem;
+}
+
+.items li::before {
+    content: '';
+    display: block;
+    width: 0.6667rem;
+    height: 0.6667rem;
+    position: absolute;
+    left: 0.0133rem;
+    top: 0.3133rem;
+    background-size: cover;
+}
+
+.address::before {
+    background-image: url('./img/address.png');
+}
+
+.money::before {
+    background-image: url('./img/money.png');
+}
+
+.email::before {
+    background-image: url('./img/email.png');
+}
+
+.question::before {
+    background-image: url('./img/question.png');
+}
+
+.items li:last-child {
+    border: none;
+}
+.items li::after {
+    content: '>';
+    display: block;
+    width: 0.6667rem;
+    height: 0.6667rem;
+    position: absolute;
+    right: 0.0133rem;
+    top: 0;
+    color: #aaa;
+}
+.tel{
+    font-size:0.4rem;
+    color: #ffb000;
+    text-align:center ;
+    height: 1.333rem;
+    line-height: 1.333rem;
+    background-color: #fff;
+}
+.time{
+    font-size: 0.3333rem;
+    text-align:center ;
+    color: #999;
+    margin-top: 0.2133rem;
+    
+}

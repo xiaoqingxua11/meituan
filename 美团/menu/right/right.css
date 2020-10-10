@@ -1,0 +1,90 @@
+.right-content {
+    flex: 1;
+    margin-left: 0.1333rem;
+    height: 100%;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.right-content .right-list {
+    height: 100%;
+    overflow:auto;
+}
+
+.right-content .right-list-inner {
+    font-size: 0.2133rem;
+    padding-bottom: 0.3333rem;
+}
+
+.right-content .right-title {
+    font-size: 0.4rem;
+    color: #333;
+    margin-top: 0.0667rem;
+    padding-left: 0.1333rem;
+    border-left: 0.04rem solid #ffd161;
+}
+
+.right-content .menu-item {
+    display: flex;
+    padding: 0.3333rem 0;
+    border-bottom: 0.0133rem solid #f0f0f0;
+    position: relative;
+}
+
+.right-content .menu-item .img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.6667rem;
+}
+.right-content .menu-item-right{
+    flex:1;
+}
+.right-content .item-title{
+   font-size: 0.4133rem;
+   color:#2f2f2f;
+}
+.right-content .item-desc,.item-zan{
+    font-size: 0.3333rem;
+    color: #a9a9a9;
+    margin-top: 0.2rem;
+    line-height: 0.4rem;
+    padding-right: 0.433rem;
+}
+.right-content .item-price{
+    margin-top: 0.0667rem;
+    color: #fe4d3d;
+    font-size: 0.4667rem;
+}
+.right-content .unit{
+   color: #a9a9a9;
+   font-size: 0.4667rem;
+}
+.right-content .select-content{
+    position: absolute;
+    right: 0.0667rem;
+    bottom: 0.2667rem;
+    display: flex;
+}
+.right-content .plus{
+    width: 0.5333rem;
+    height: 0.5333rem;
+    background-image: url('./img/plus.png');
+    background-size: cover;
+    
+}
+.right-content .minus{
+    width: 0.5333rem;
+    height: 0.5333rem;
+    background-image: url('./img/minus.png');
+    background-size: cover;
+    
+}
+.right-content .count{
+    font-size: 0.4rem;
+    color: #2f2f2f;
+    width: 0.4rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    margin: 0 0.1067rem;
+    
+}

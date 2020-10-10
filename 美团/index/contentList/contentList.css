@@ -1,0 +1,113 @@
+.list-content {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 0.6667rem;
+}
+
+.list-content .list-title {
+    text-align: center;
+    font-size:0.4133rem;
+    margin-top: 0.2867rem;
+    margin-bottom:0.3667rem ;
+}
+.list-content .title-line{
+    display: inline-block;
+    border-bottom: 0.0133rem solid #949494; 
+    height: 0.33rem;
+    width: 2.4rem;
+    margin: 0rem 0.0533rem 0.0533rem 0.0533rem ;
+}
+.loading{
+    padding-bottom: 0.1333rem;
+    padding-top: 0.1333rem;
+    font-size: 0.2133rem;
+    text-align: center;
+    color: #ccc;
+}
+.r-item-content{
+    display: flex;
+    padding: 0.2rem 0;
+    margin: 0 0.1333rem;
+    color: #656565;
+    position: relative;
+}
+.r-item-content .item-img{
+ width: 2.5647rem;
+ height:1.7667rem;
+ border: 0.0133rem solid #e4e4e4;
+}
+.r-item-content .item-info-content{
+    flex: 1;
+    margin-left: 0.0933rem;
+    overflow: hidden;
+}
+
+.r-item-content .brand{
+    position: absolute;
+    left: 0.0133rem;
+    top: 0.2133rem;
+    font-size: 0.23rem;
+    padding: 0.0267rem;
+    color: #fff;
+}
+.r-item-content .brand-pin {
+   background-color:#ffa627;
+}
+.r-item-content .brand-xin {
+    background-color:#21c56c;
+ }
+ .r-item-content .item-title{
+     margin-top: 0.04rem;
+     padding-left: 0.1333rem;
+     font-size: 0.6rem;
+     font-weight: 500;
+     color:#333;
+ }
+ .r-item-content .item-desc{
+  margin-top: 0.1322rem;
+  font-size: 0.3567rem;
+}
+.r-item-content .item-count{
+    float: left;
+    margin-left: 0.0667rem;
+  }
+  .r-item-content .item-time{
+    float: left;
+    
+  }
+  .r-item-content .item-score{
+    float: left;
+}
+  .r-item-content .item-distance{
+    float: right;
+  }
+ 
+  .r-item-content .item-pre-price{
+      margin-top: 0.2667rem;
+      font-size: 0.29rem;
+      
+  }
+  .r-item-content .other-info{
+    display: flex;
+    color: #898989;
+    margin-top: 0.0933rem;
+    font-size: 0.16rem;
+  }
+  .r-item-content .other-tag{
+      width: 0.1867rem;
+      height: 0.1867rem;
+  }
+  .item-others .other-content{
+     margin-left: 0.04rem;
+     height: 0.2867rem;
+     width: 100%;
+     padding-bottom: 0.0667rem;
+     font-size: 0.2633rem;
+}
+  .clearfix::before,.clearfix::after{
+      display: table;
+      content: '';
+  }
+  .clearfix::after{
+      clear: both;
+  }

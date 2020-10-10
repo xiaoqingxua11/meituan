@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菜单页</title>
+    <script type="text/javascript">
+        (function () {
+            var docEl = document.documentElement;
+            function setRemUnit() {
+                //获取rem基准值
+                var rem = docEl.clientWidth / 10;
+                docEl.style.fontSize = rem + 'px';
+            }
+            setRemUnit();
+            window.addEventListener('resize', setRemUnit);
+            window.addEventListener('pageshow', function (e) {
+                if (e.persisted) {
+                    setRemUnit();
+                }
+            })
+        })();
+    </script>
+    <link rel="stylesheet" href="../lib/rest.css">
+    <link rel="stylesheet" href="../common/navHeader/navHeader.css">
+    <link rel="stylesheet" href="../common/headerTab/headerTab.css">
+    <link rel="stylesheet" href="./left/left.css">
+    <link rel="stylesheet" href="./right/right.css">
+    <link rel="stylesheet" href="./shopBar/shopBar.css">
+
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="nav">
+        <a href="../index/index.html">
+            <div class="back-icon"></div>
+        </a>
+        <h4 class="title">深圳麦当劳前海二餐厅</h4>
+    </div>
+    <!-- tabbar -->
+    <div class="tab-bar"></div>
+    <!-- menu-inner -->
+    <div class="menu-inner">
+        <div class="left-bar">
+            <div class="left-bar-inner"></div>
+        </div>
+        <div class="right-content">
+            <p class="right-title"></p>
+            <div class="right-list">
+                <div class="right-list-inner"></div>
+            </div>
+        </div>
+    </div>
+    <!-- shop-bar -->
+    <div class="shop-bar"></div>
+    <div class="mask hide"></div>
+    <script type="text/javascript" src="../lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../common/headerTab/headerTab.js"></script>
+    <script type="text/javascript" src="./left/left.js"></script>
+    <script type="text/javascript" src="./right/right.js"></script>
+    <script type="text/javascript" src="./shopBar/shopBar.js"></script>
+
+
+</body>
+
+</html>

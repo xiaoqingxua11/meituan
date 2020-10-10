@@ -1,0 +1,24 @@
+.nav{
+    height: 1.3333rem;
+    border-bottom: 1px solid #b2b2b2;
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 999;
+    background-color: #fff;
+}
+.nav .title{
+    font-size: 0.4rem;
+    color: #2f2f2f;
+    text-align: center;
+    line-height:1.33rem ;
+}
+.nav .back-icon{
+     width: 0.6667rem;
+     height: 0.6667rem;
+     position: absolute;
+     top: 0.3333rem;
+     left: 0.0667rem;
+     background-image: url('./img/timg.jpg');
+     background-size: cover;
+}

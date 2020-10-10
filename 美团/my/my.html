@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的</title>
+    <script type="text/javascript">
+        (function () {
+            var docEl = document.documentElement;
+            function setRemUnit() {
+                //获取rem基准值
+                var rem = docEl.clientWidth / 10;
+                docEl.style.fontSize = rem + 'px';
+            }
+            setRemUnit();
+            window.addEventListener('resize', setRemUnit);
+            window.addEventListener('pageshow', function (e) {
+                if (e.persisted) {
+                    setRemUnit();
+                }
+            })
+    })();
+    </script>
+    <link rel="stylesheet" href="../lib/rest.css">
+    <link rel="stylesheet" href="../common/bottomBar/bottomBar.css">
+    <link rel="stylesheet" href="./my.css">
+   
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="my">
+        <div class="header">
+            <img class="avatar" src="http://i.waimai.meituan.com/static/img/default-avatar.png"></img>
+            <p class="nickname">张晏&范伊婧 &gt;</p>
+        </div>
+        <div class="content">
+            <ul class="items">
+                <li class="address">收货地址管理</li>
+                <li class="money">商家代金券</li>
+            </ul>
+            <ul class="items">
+                <li class="email">意见反馈</li>
+                <li class="question">常见问题</li>
+            </ul>
+            <p class="tel">客服电话:&nbsp;101-097-77</p>
+            <p class="time">服务时间:&nbsp;9:00-23:00</p>
+        </div>
+    </div>
+ 
+    <!-- 底部菜单 -->
+    <div class="bottom-bar"></div>
+    <script type="text/javascript" src="../lib/jquery.min.js"></script>
+    <script  type="text/javascript" src="../common/bottomBar/bottomBar.js"></script>
+
+</body>
+
+</html>

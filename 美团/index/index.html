@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <script type="text/javascript">
+        (function () {
+            var docEl = document.documentElement;
+            function setRemUnit() {
+                //获取rem基准值
+                var rem = docEl.clientWidth / 10;
+                docEl.style.fontSize = rem + 'px';
+            }
+            setRemUnit();
+            window.addEventListener('resize', setRemUnit);
+            window.addEventListener('pageshow', function (e) {
+                if (e.persisted) {
+                    setRemUnit();
+                }
+            })
+    })();
+    </script>
+    <link rel="stylesheet" href="../lib/rest.css">
+    <link rel="stylesheet" href="./header/header.css">
+    <link rel="stylesheet" href="./searchBar/searchBar.css">
+    <link rel="stylesheet" href="./category/categeory.css">
+    <link rel="stylesheet" href="./contentList/contentList.css">
+    <link rel="stylesheet" href="./starScore/starScore.css">
+    <link rel="stylesheet" href="../common/bottomBar/bottomBar.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="search-bar">
+            <div class="bar-location">
+                <div class="location-icon"></div>
+                <div class="location-text">南京</div>
+            </div>
+            <div class="search-btn">
+                <p class="place-holder">汉堡</p>
+            </div>
+        </div>
+       
+        <img class="header-img"
+            src="https://p1.meituan.net/1440.590/codeman/d2ab674fa0e4c875865e524d82fe15a34372569.png"
+            alt="header-bgimg">
+    </div>
+    <!-- 类目 -->
+    <div class="category-content">
+    </div>
+    <!-- 商家列表 -->
+    <div class="list-content">
+        <h4 class="list-title">
+            <span class="title-line"></span>
+            <span>附近商家</span>
+            <span class="title-line"></span>
+        </h4>
+        <div class="list-wrap"></div>
+        <div class="loading">加载中</div>
+    </div>
+    <!-- 底部菜单 -->
+    <div class="bottom-bar"></div>
+    <script type="text/javascript" src="../lib/jquery.min.js"></script>
+    <script type="text/javascript" src="./category/categeory.js"></script>
+    <script type="text/javascript" src="./contentList/contentList.js"></script>
+    <script  type="text/javascript" src="./starScore/starScore.js"></script>
+    <script  type="text/javascript" src="../common/bottomBar/bottomBar.js"></script>
+
+</body>
+
+</html>

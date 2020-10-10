@@ -1,0 +1,44 @@
+.menu-inner{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top:2.3666rem;
+    display: flex;
+    overflow: hidden;
+}
+.menu-inner .left-bar{
+    width: 2.3rem;
+    background-color: #efefef;
+    overflow: auto;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+
+}
+.menu-inner .left-bar-inner{
+    padding-bottom: 0.6667rem;
+}
+.menu-inner .left-item{
+    font-size: 0.2667rem;
+    color: #656565;
+    text-align: center;
+    border-bottom: 1px solid #bfbfbf;
+    display: flex;
+    justify-content: center;
+}
+.menu-inner .left-item.active{
+    background-color: #fff;
+}
+.menu-inner .item-text{
+    line-height: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.3rem;
+    
+}
+.menu-inner .item-icon{
+    width: 0.4rem;
+    height: 0.4rem;
+    display: inline-block;
+    margin-right: 0.08rem;
+    vertical-align: -0.0533rem;
+}

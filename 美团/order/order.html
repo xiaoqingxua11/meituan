@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>订单页</title>
+    <script type="text/javascript">
+        (function () {
+            var docEl = document.documentElement;
+            function setRemUnit() {
+                //获取rem基准值
+                var rem = docEl.clientWidth / 10;
+                docEl.style.fontSize = rem + 'px';
+            }
+            setRemUnit();
+            window.addEventListener('resize', setRemUnit);
+            window.addEventListener('pageshow', function (e) {
+                if (e.persisted) {
+                    setRemUnit();
+                }
+            })
+    })();
+    </script>
+    <link rel="stylesheet" href="../lib/rest.css">
+    <link rel="stylesheet" href="../common/bottomBar/bottomBar.css">
+    <link rel="stylesheet" href="../order/header/header.css">
+    <link rel="stylesheet" href="../order/contentList/contentList.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">订单</div>
+    <!-- 订单列表 -->
+    <div class="wrap">
+    <div class="order-list"></div>
+    <div class="loading">加载中</div>
+    </div>
+    <!-- 底部菜单 -->
+    <div class="bottom-bar"></div>
+    <script type="text/javascript" src="../lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../order/contentList/contentList.js"></script>
+    <script  type="text/javascript" src="../common/bottomBar/bottomBar.js"></script>
+
+</body>
+
+</html>
